@@ -10,10 +10,21 @@ a {
   margin: 0;
   padding: 0;
 }
+h1,h2,h3,h4,h5,h6 {
+  font-weight: normal;
+}
+ol , 
+ul {
+  list-style: none;
+}
 hr {
   height: 0;
   border: none;
   border-top: 1px solid #dedede;
+}
+
+div {
+  display:block;
 }
 .clearfix::after{
   content: '';
@@ -33,7 +44,8 @@ hr {
 }
 .topNavBar nav {
   padding-top: 7px;
-  }
+}
+  
 .topNavBar nav > ul {
   list-style: none;
   margin: 0;
@@ -75,20 +87,26 @@ margin-right: 17px;
   background-image: url(./img/rs-cover.jpg);
   background-position: center center;
   background-size: cover;
+
 }
 .banner .mask {
   height: 515px;
   background-color: rgba(0,0,0,0.8);
+  box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.51);
+
 }
 .userCard {
   max-width: 940px;
   margin: 0 auto;
   background-color: #fff;
+  box-shadow: 0px 1px 5px -1px rgba(0,0,0,0.51);
+
 }
 .userCard .welcome {
   background: #e6686a;
   color: white;
   display: inline-block;
+  vertical-align: top;
   padding: 4px 16px;
   line-height: 24px;
   position: relative;
@@ -116,7 +134,7 @@ margin-right: 17px;
   margin-top: 18px;
 }
 .userCard .text hr {
-  margin-top: 20px 0;
+  margin: 20px 0;
 }
 .userCard .pictureAndText {
   padding: 50px;
@@ -140,6 +158,7 @@ margin-right: 17px;
 }
 .userCard > footer.media > a {
   display: inline-block;
+  vertical-align: top;
   width: 40px;
   line-height: 30px;
   padding: 5px 0px;
@@ -155,4 +174,143 @@ margin-right: 17px;
   fill: white;
   vertical-align: top;
 
+}
+body > main {
+  margin-top: -340px;
+}
+body > main .downlond-wrapper {
+  text-align:center;
+
+}
+body > main .downlondresume {
+  font-size: 15px;
+  font-weight: bold;
+  color: #3d4451;
+  border: 1px solid #cbcdcf;
+  border-radius: 2px;
+  padding:21px 55px;
+  margin-top:32px;
+  margin-bottom:32px;
+  display: inline-block;
+  transition: 0.3s;
+  vertical-align: top;
+
+}
+body > main .downlondresume:hover {
+  box-shadow: 0px 4px 13px 0px rgba(0,0,0,0.2);
+}
+body > main .introduce{
+  text-align: center;
+  font-size: 18px;
+  font-family: kai;
+  line-height: 1.8;
+
+}
+.skill {
+  max-width: 940px;
+  margin: 0 auto;
+  margin-top: 60px;
+} 
+section h2 {
+text-align: center;
+color:#3d4451;
+font-size: 34px;
+line-height: 1.2;
+font-weight: 600;
+margin-bottom:25px;
+}
+
+section h3 {
+  font-size:14px;
+  line-height:1.1;
+  padding-top: 30px;
+}
+
+section > ol {
+  padding:10px 50px 20px 50px;
+  background-color: #fff;
+  box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.5);
+
+}
+
+section > ol > li {
+  float:left;
+  width: 48%;
+}
+
+section > ol > li:nth-child(even) {
+  float:right;
+}
+
+section .progressbar {
+  height: 5px;
+  background-color: #FAE1E1;
+  margin:5px 0 20px;
+  display: block;
+  border-radius: 2px;
+
+}
+
+section .progress {
+  height:5px;
+  background: #e8676b;
+}
+
+.production {
+ text-align: center;
+ margin-top:60px;
+ margin-left: auto;
+ margin-right: auto;
+ max-width: 940px;
+ margin-bottom: 100px;
+}
+
+section > nav {
+  display: inline-block;
+  vertical-align: top;
+  margin-bottom: 28px;
+
+}
+section > nav > ol > li {
+  float:left;
+  margin-left: 40px;
+  cursor: pointer;
+}
+section > nav > ol > li:first-child {
+  margin-left:0;
+}
+
+section.production > nav .bar {
+  height: 5px;
+  background: white;
+  margin-top: 5px;
+  border-radius: 2px;
+}
+section.production > nav .progress {
+  height: 100%;
+  background: #e6686a;
+  border-radius: 2px;
+  width: 18%;
+  transition: all 0.3s;
+}
+
+section.production > nav .bar.state-1 .progress {
+  margin-left: 0;
+  width: 18%;
+}
+section.production > nav .bar.state-2 .progress {
+  margin-left: 70px;
+  width: 18%;
+}
+section.production > nav .bar.state-3 .progress {
+  margin-left: 140px;
+  width: 40%;
+}
+
+section.production > .jobs {
+  position: relative;
+  }
+section.production > .jobs > .big,
+section.production > .jobs > .small {
+  position: absolute;
 }
